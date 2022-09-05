@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Opiskelijat</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	
+	<p>Tervetuloa Haaga-Heliaan!</p>
+   <table>
+   	<tr th:each="oppilas : ${studentList}">
+   		<td th:text= "${oppilas.fname}"></td>
+   		<td th:text= "${oppilas.lname}"></td>
+   </tr>
+   </table>
+   
+</body>
+</html>
